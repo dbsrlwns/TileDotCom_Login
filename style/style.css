@@ -1,0 +1,315 @@
+@charset "UTF-8";
+@import url("style_Reset.css");
+
+#wrap {
+    width: 1140px;
+    height: 900px;
+    margin: 0 auto;
+}
+
+/*   헤더영역   */
+#header {
+    height: 130px;
+}
+#headerLogo {
+    width: 320px;
+    line-height: 130px;
+    text-align: center;
+}
+#searchArea {
+    padding: 20px 50px 0;
+}
+#searchArea p {
+    color: #3c8bb6;
+    font-size: 11px;
+    font-weight: bold;
+}
+#searchArea input {
+    width: 245px;
+    margin: 5px;
+    padding: 7px 5px;
+    font-size: 19px;
+    border: 2px solid #3c8bb6;
+    border-top: 4px solid #3c8bb6;
+    border-bottom: 4px solid #3c8bb6;
+}
+#searchArea > a {
+    padding: 11px 10px;
+    background-color: #3c8bb6;
+    color: #fff;
+}
+#searchArea > div > ul > li > a {
+    display: inline-block;
+    padding: 0 8px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#lnb {
+    flex: 1;
+}
+#lnb ul {
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+#lnb ul li:last-child {
+    margin-right: 30px;
+}
+#lnb ul li a {
+    display: inline-block;
+    width: 100%;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 0 7px;
+    position: relative;
+}
+#lnb ul li a:before {
+    content: '|';
+    position: absolute;
+    top: 0;
+    left: -2px;
+}
+#lnb ul li:first-child a:before {
+    content: '';
+}
+
+/*  GNB 메뉴  */
+#gnb {
+    margin: 8px 0 15px;
+}
+#mainMenu .mainLi {
+    flex: 1;
+}
+#mainMenu .mainLi a {
+    border-left: 1px solid #fff;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #383735;
+    width: 100%;
+    text-align: center;
+}
+#mainMenu .mainLi a:hover {
+    border-bottom: 4px solid #3793c4;
+}
+#mainMenu .mainLi:last-child a:hover {
+    border-bottom: none;
+}
+#mainMenu .mainLi:first-child {
+    text-align: center;
+    background-color: #3793c4;
+    font-size: 16px;
+    padding-top: 11px;
+    font-weight: bold;
+    color: #fff;
+}
+#mainMenu .mainLi i {
+    font-size: 16px;
+    color: #fff;
+    margin-right: 5px;
+}
+#mainMenu .mainLi:last-child a {
+    position: relative;
+    top: 5px;
+    background-color: #f7941d;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: normal;
+}
+#mainMenu .mainLi:last-child span.blink {
+    /* animation: blink 1s step-end infinite; */
+    color: #fff;
+}
+/* @keyframes blink {
+    50% { opacity: 0; };
+} */
+
+
+/*   메인 영역   */
+#main {
+    border-bottom: 3px solid #000;
+    height: 430px;
+    margin: 0 70px;
+}
+#myshop {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 0 20px;
+    width: 155px;
+    height: 265px;
+}
+#myshop h4 {
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+#myshop ul {
+    border-top: 3px solid #f7f7f8;
+}
+#myshop ul li {
+    
+}
+#myshop ul li span {
+    display: inline-block;
+    width: 12px;
+    height: 9px;
+    background: url(../images/arrow_Icon.png) no-repeat center center;
+}
+#myshop ul li a {
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #333;
+}
+
+#loginArea {
+    padding: 30px 170px;
+    flex: 1;
+}
+#loginArea .loginTxt {
+    font-size: 11px;
+}
+#loginArea .loginTxt span:nth-child(1) {
+    font-size: 20px;
+    font-weight: bold;
+    color: #27bab8;
+}
+#loginArea span:nth-child(2) {
+    color: #78a838;
+    font-weight: bold;
+}
+#loginArea .loginTxt p {
+    color: #7b7b7b;
+    line-height: 14px;
+}
+
+.loginBox {
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    margin: 25px 0;
+    padding: 24px 33px 13px;
+}
+.loginBox legend {
+    font-size: 10px;
+    font-weight: bold;
+    color: #753896;
+}
+.loginLi {
+    margin-left: 10px;
+    position: relative;
+    top: -5px;
+}
+.loginLi li {
+    list-style-type: square;
+    list-style-position: inside;
+    margin-bottom: 5px;
+}
+.loginLi li::marker {
+    color: #f46d71;
+    font-size: 11px;
+}
+.loginLi li span {
+    display: inline-block;
+    color: #666;
+    width: 50px;
+    font-size: 12px;
+}
+.loginLi li input[type="text"],
+.loginLi li input[type="password"] {
+    width: 125px;
+    outline: none;
+}
+.loginBox input[type="checkbox"] {
+    margin-left: 10px;
+    position: relative;
+    top: 12px;
+}
+.loginBox > form > label {
+    font-size: 11px;
+    margin-left: 5px;
+    position: relative;
+    top: 12px;
+}
+.loginBox button {
+    background-color: #b6b6b6;
+    width: 60px;
+    height: 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    position: relative;
+    top: 10px;
+}
+
+.find {
+
+}
+.find > p {
+    margin-top: 40px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.sign_up:nth-child(2) {
+    margin-top: 15px;
+}
+.sign_up strong {
+    font-size: 11px;
+    color: #a44f9b;
+}
+.sign_up > a > div {
+    margin-left: 5px;
+    line-height: 15px;
+}
+.sign_up span {
+    font-size: 10px;
+    color: #666;
+}
+
+
+/*   푸터 영역   */
+#footer {
+    margin-top: 20px;
+    padding: 0 70px; 
+}
+#footer > div {
+    padding: 0 10px;
+    flex: 1;
+}
+.footerBox h3 {
+    margin-bottom: 20px;
+}
+.footerBox h2 {
+    margin: 20px 0;
+    white-space: nowrap;
+}
+.footerBox p {
+    line-height: 22px;
+}
+.footerBox:nth-child(1) p {
+    font-size: 14px;
+    font-weight: bold;
+}
+.footerBox:nth-child(2) p span {
+    color: #03549e;
+    font-size: 19px;
+    font-weight: bold;
+}
+.footerBox:nth-child(3) p {
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.footerBox:nth-child(3) span:last-child {
+    font-size: 13px;
+}
+.footerBox:nth-child(4) a {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+}
